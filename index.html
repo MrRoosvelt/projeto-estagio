@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Churrasquinho do Fernando</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+  
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("imagens/pexels-photo-899237.jpeg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+
+.logo {
+    max-width: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.faixa{
+    background-color: black;
+    color: white;
+    font-family: "Inconsolata", sans-serif;
+    text-align: center;
+}
+
+.mapa {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20%;
+}
+
+.mapa iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.boxmapa{
+  position: relative;
+  margin: 0 auto; /* Centraliza horizontalmente */
+  max-width: 700px;
+  height: 600px;
+}
+
+.w3-button {
+    font-size: 20px;
+  }
+
+
+</style>
+</head>
+<body>
+
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">SOBRE NÓS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">LOCAL</a>
+    </div>
+  </div>
+</div>
+
+
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">18:00 às 22:00</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <img class="logo" src="imagens/WhatsApp Image 2023-06-12 at 08.28.44.jpeg" alt="logo">
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">R. Itaquari, 170 - Itapuã, Vila Velha - ES, 29101-850</span>
+  </div>
+</header>
+
+<div class="w3-sand w3-grayscale w3-large">
+
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">SOBRE NÓS</span></h5>
+        <h3>Quem somos?</h3>
+        <p>Somos o churrasquinho do Fernando, um Trailer especializado em espetinhos de churrasco, com várias opções de sabores. Também iniciamos a produção e venda de franguinho e batata para nossos clientes, com foco em expandir nossa variedade de produtos.</p>
+        <h3>O que fazemos?</h3>
+        <p>Fazemos todos os tipos de churrasco, em especial os tradicionais de Boi e Frango. Temos a opção do churrasco no Pão, onde utilizamos um irresistível pão com queijo parmesão, e a opção do pratinho, que com os complementos de vinagrete, farofa e feijão tropeiro.</p>
+        <h3>Quando começamos?</h3>
+        <p>Estamos no mercado desde 2020 com foco na distribuição de espetinhos. Porém, ao longo desses anos, resolvemos montar o trailer e trabalhar com a venda direta para o consumidor final, o que tem dado muito certo desde então.</p>
+        <h3>Onde estamos atualmente?</h3>
+        <p>Estamos localizados na R. Itaquari, 170 - Itapuã, Vila Velha - ES, 29101-850, onde atendemos nossos clientes de diversas localidades da grande Vitória.</p>
+        <h3>Como desenvolvemos nossas tarefas?</h3>
+        <p>Nossos espetinhos são diferenciados, pois utilizamos as melhores matérias-primas, como as carnes e materiais de excelente qualidade. Nossa equipe é especialista em receitas que foram desenvolvidas e aprimoradas pelo nosso chef, visando atender com maior excelência nosso cliente.</p>
+        <h3>Por que realizamos nossa atividade?</h3>
+        <p>Nosso objetivo é oferecer para nosso cliente o espetinho mais gostoso, fresquinho e saboroso de Vila Velha.</p>
+    <img src="imagens/WhatsApp Image 2023-06-12 at 09.08.25.jpeg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Horário de funcionamento:</strong> Segunda a Sexta das 18:00 às 22:00</p>
+    <p><strong>Endereço:</strong> R. Itaquari, 170 - Itapuã, Vila Velha - ES, 29101-850</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Para Comer</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Para Beber</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+    <h2 class="faixa">Churrasquinhos</h2>
+      <h5>Frango</h5>
+      <p class="w3-text-grey">R$10,00</p><br>
+    
+      <h5>Misto</h5>
+      <p class="w3-text-grey">R$10,00</p><br>
+    
+      <h5>Queijinho</h5>
+      <p class="w3-text-grey">R$10,00</p><br>
+    
+      <h5>Carne de porco</h5>
+      <p class="w3-text-grey">R$10,00</p><br>
+    
+      <h5>Tulipa</h5>
+      <p class="w3-text-grey">R$10,00</p>
+
+      <h5>Coração</h5>
+      <p class="w3-text-grey">R$10,00</p><br>
+    
+      <h5>Boi</h5>
+      <p class="w3-text-grey">R$12,00</p><br>
+    
+      <h5>Costela</h5>
+      <p class="w3-text-grey">R$12,00</p><br>
+    
+      <h5>Medalhão Boi</h5>
+      <p class="w3-text-grey">R$12,00</p>
+
+      <h5>Medalhão Frango</h5>
+      <p class="w3-text-grey">R$12,00</p>
+
+      <h2 class="faixa">Porções</h2>
+
+      <h5>Porção Especial - 1</h5>
+      <p class="w3-text-grey">Vinagrete - Farofa - Molho R$10,00 + Valor de 3 a 5 espetos</p><br>
+    
+      <h5>Porção Especial - 2</h5>
+      <p class="w3-text-grey">Feijão tropeiro - Vinagrete - Farofa - Molho R$15,00 + Valor de 3 a 5 espetos</p><br>
+
+      <h5>Pratinho Individual - 1</h5>
+      <p class="w3-text-grey">Vinagrete - Farofa - Molho</p>
+      <p class="w3-text-grey">Valor da porção R$6,00 + Valor do espeto</p>
+      <br>
+
+      <h5>Pratinho Individual - 2</h5>
+      <p class="w3-text-grey">Feijão tropeiro - Vinagrete - Molho</p>
+      <p class="w3-text-grey">Valor da porção R$9,00 + Valor do espeto</p>
+      <br>
+
+      <h5>Pão com Churrasquinho</h5>
+      <p class="w3-text-grey">Pão com Parmesão, 1 churrasquinho à sua    escolha, vinagrete, molho especial e batata palha</p>
+      <p class="w3-text-grey">Valor da porção R$6,00 + Valor do espeto<p>
+
+      <h2 class="faixa">Adicionais</h2>
+      <p class="w3-text-grey">Vinagrete..........R$3,00</p>
+      <p class="w3-text-grey">Batata Palha.......R$2,00</p>
+      <p class="w3-text-grey">Farofa.............R$2,00</p>
+      <p class="w3-text-grey">Molho..............R$2,00</p>
+      
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Refrigerante Lata</h5>
+      <p class="w3-text-grey">R$6,00</p><br>
+    
+      <h5>Água 500ml</h5>
+      <p class="w3-text-grey">R$3,00</p><br>
+    
+      <h5>Água Com Gás 500ml</h5>
+      <p class="w3-text-grey">R$3,00</p><br>
+    
+      <h5>Suco</h5>
+      <p class="w3-text-grey">R$6,00</p><br>
+    
+      <h5>Cerveja</h5>
+      <p class="w3-text-grey">Consultar Disponibilidade</p>
+    </div>  
+    <img src="imagens/pexels-photo-2233730.webp" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="boxmapa" class="w3-content">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">ONDE NOS ENCONTRAR</span></h5>
+    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.629270960693!2d-40.2959567245625!3d-20.356928451745347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb817b41de116dd%3A0x49af0e421c8f3629!2sChurrasquinho%20do%20Fernando!5e0!3m2!1spt-BR!2sbr!4v1686574454305!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+<div>
+
+<footer class="w3-center w3-large">
+    <p>Roosvelt Almeida Rangel</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
